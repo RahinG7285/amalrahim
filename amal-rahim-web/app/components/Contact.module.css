@@ -1,0 +1,24 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.box {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+}
+
+.box h2 {
+    margin-bottom: 1rem;
+}
+
+.box p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}

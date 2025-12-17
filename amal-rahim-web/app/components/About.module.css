@@ -1,0 +1,21 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}

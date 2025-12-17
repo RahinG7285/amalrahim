@@ -1,0 +1,12 @@
+{
+    "name": "amal-rahim-root-proxy",
+    "version": "1.0.0",
+    "description": "Proxy for amal-rahim-web",
+    "scripts": {
+        "dev": "cd amal-rahim-web && npm run dev",
+        "build": "cd amal-rahim-web && npm run build",
+        "start": "cd amal-rahim-web && npm run start",
+        "lint": "cd amal-rahim-web && npm run lint",
+        "install-app": "cd amal-rahim-web && npm install"
+    }
+}
