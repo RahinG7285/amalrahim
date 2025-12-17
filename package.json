@@ -4,7 +4,7 @@
     "description": "Proxy for amal-rahim-web",
     "scripts": {
         "dev": "cd amal-rahim-web && npm run dev",
-        "build": "cd amal-rahim-web && npm run build",
+        "build": "cd amal-rahim-web && npm install && npm run build",
         "start": "cd amal-rahim-web && npm run start",
         "lint": "cd amal-rahim-web && npm run lint",
         "install-app": "cd amal-rahim-web && npm install"
