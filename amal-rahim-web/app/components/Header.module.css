@@ -1,12 +1,18 @@
 .header {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     position: fixed;
-    width: 100%;
-    top: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    width: calc(100% - 2rem);
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 1000;
-    border-bottom: 1px solid var(--secondary);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -16,31 +22,61 @@
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-dark);
+    font-size: 1.25rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
 }
 
 .nav {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
 }
 
 .nav a {
     text-decoration: none;
-    color: var(--text-muted);
-    font-weight: 500;
-    transition: color 0.3s;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--brand-primary);
+    transition: width 0.3s ease;
 }
 
 .nav a:hover {
-    color: var(--primary);
+    color: var(--brand-primary);
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav .contactBtn {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        gap: 1rem;
+    .header {
+        width: calc(100% - 1rem);
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+
+    .nav {
+        display: none;
     }
 }
