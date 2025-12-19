@@ -5,20 +5,48 @@
 }
 
 .box {
-    background: var(--primary);
-    color: var(--white);
-    text-align: center;
+    background: white;
     padding: 4rem 2rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow-hover);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .box h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
 }
 
 .box p {
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    border-color: var(--primary);
+}
+
+.inputGroup textarea {
+    resize: vertical;
 }
