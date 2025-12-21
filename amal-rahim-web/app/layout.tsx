@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Amal Ramin - Pediatric Nurse",
   description: "Portfolio of Amal Ramin, a dedicated Pediatric Nurse at DHQ Hospital Muzaffargarh.",
+  verification: {
+    google: "vXBhQHenWw6mExBBSCvpgqEDDCME1tG2OQYYMVR4tCM",
+  },
 };
 
 export default function RootLayout({
