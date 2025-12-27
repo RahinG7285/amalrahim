@@ -1,0 +1,50 @@
+.footer {
+    padding: 6rem 0;
+    text-align: center;
+    background: var(--bg-main);
+    border-top: 1px solid var(--border-light);
+}
+
+.title {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--brand-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: var(--brand-primary);
+}
+
+.copyright {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}

@@ -1,38 +1,39 @@
 .header {
-    padding: 1rem 0;
     position: fixed;
-    width: calc(100% - 2rem);
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    top: 2rem;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: var(--radius-full);
-    box-shadow: var(--shadow-lg);
-    transition: all 0.3s ease;
+    padding: 0 2rem;
 }
 
 .container {
+    background: var(--bg-glass);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    height: 5rem;
+    padding: 0 2.5rem;
+    border-radius: var(--radius-md);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-premium);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: var(--text-primary);
     font-weight: 800;
-    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
+    font-family: var(--font-heading);
 }
 
 .nav {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -40,40 +41,20 @@
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
-    position: relative;
-}
-
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--brand-primary);
-    transition: width 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .nav a:hover {
     color: var(--brand-primary);
 }
 
-.nav a:hover::after {
-    width: 100%;
-}
-
-.nav .contactBtn {
-    padding: 0.75rem 1.75rem;
-    font-size: 0.875rem;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .header {
-        width: calc(100% - 1rem);
-        left: 0.5rem;
-        top: 0.5rem;
+        top: 1rem;
+        padding: 0 1rem;
     }
 
     .nav {

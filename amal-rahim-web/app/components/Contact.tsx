@@ -37,13 +37,10 @@ export default function Contact() {
     return (
         <section id="contact" className={`section ${styles.contactSection}`}>
             <div className="container">
-                <div className={styles.box}>
+                <div className={`${styles.box} reveal`}>
                     <div className={styles.header}>
-                        <span className="badge">Get In Touch</span>
-                        <h2 className="section-title">Let's Connect</h2>
-                        <p style={{ color: 'var(--text-secondary)', maxWidth: '500px', margin: '0 auto 2rem' }}>
-                            I am always open to discussing new opportunities in pediatric care or healthcare collaborations.
-                        </p>
+                        <span className="badge">Professional Inquiry</span>
+                        <h2 className="section-title" style={{ marginBottom: 0 }}>Initiate Connection</h2>
                     </div>
 
                     <form onSubmit={handleSubmit} className={styles.form}>
@@ -52,29 +49,29 @@ export default function Contact() {
                             <input
                                 id="name"
                                 type="text"
-                                placeholder="Your Name"
+                                placeholder="Amal Ramin"
                                 value={formData.name}
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 required
                             />
                         </div>
                         <div className={styles.inputGroup}>
-                            <label htmlFor="email">Email Address</label>
+                            <label htmlFor="email">Professional Email</label>
                             <input
                                 id="email"
                                 type="email"
-                                placeholder="name@example.com"
+                                placeholder="name@medical.com"
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 required
                             />
                         </div>
-                        <div className={styles.inputGroup}>
-                            <label htmlFor="message">Your Message</label>
+                        <div className={`${styles.inputGroup} ${styles.fullWidth}`}>
+                            <label htmlFor="message">Consultation Details</label>
                             <textarea
                                 id="message"
-                                placeholder="How can I help you?"
-                                rows={4}
+                                placeholder="Inquire about clinical services or collaborative projects..."
+                                rows={5}
                                 value={formData.message}
                                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 required
@@ -82,17 +79,17 @@ export default function Contact() {
                         </div>
 
                         <button type="submit" className={`btn-primary ${styles.submitBtn}`} disabled={status === 'loading'}>
-                            {status === 'loading' ? 'Sending Message...' : 'Send Message'}
+                            {status === 'loading' ? 'Processing...' : 'Secure Send'}
                         </button>
 
                         {status === 'success' && (
-                            <div className={`${styles.statusMessage} ${styles.success}`}>
-                                ✨ Message sent successfully! I'll get back to you soon.
+                            <div className={`${styles.statusMessage} ${styles.success} ${styles.fullWidth}`}>
+                                ✨ Message transmitted successfully.
                             </div>
                         )}
                         {status === 'error' && (
-                            <div className={`${styles.statusMessage} ${styles.error}`}>
-                                ❌ Error sending message. Please try again.
+                            <div className={`${styles.statusMessage} ${styles.error} ${styles.fullWidth}`}>
+                                ❌ Transmission failed. Please retry.
                             </div>
                         )}
                     </form>
