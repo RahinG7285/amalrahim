@@ -6,29 +6,29 @@ export default function Hero() {
             <div className={`container ${styles.content}`}>
                 <div className={styles.heroMain}>
                     <div className={`${styles.textContent} reveal`}>
+                        <span className="badge">Professional Care</span>
                         <h1 className={styles.title}>
-                            Dedicated <br />
-                            <span>Nursing Care.</span>
+                            Compassionate care for your <span>children.</span>
                         </h1>
                         <p className={styles.subtitle}>
-                            Professional Pediatric Specialist at DHQ Hospital Muzaffargarh.
-                            Commitment to excellence in clinical procedures and patient advocacy.
+                            Experienced Pediatric Nurse at DHQ Hospital Muzaffargarh.
+                            Specializing in expert clinical care with a soft touch for your little ones.
                         </p>
                         <div className={styles.buttons}>
-                            <a href="#contact" className="btn-primary">Professional Consultation</a>
-                            <a href="#about" className="btn-secondary">Technical Journey</a>
+                            <a href="#contact" className="btn-primary">Book Consultation</a>
+                            <a href="#about" className="btn-secondary">Learn More</a>
                         </div>
                     </div>
-                    <div className={`${styles.visualContent} reveal delay-1`}>
+                    <div className={`${styles.visualContent} reveal delay-2`}>
                         <div className={styles.imageContainer}>
                             <img
-                                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
-                                alt="Medical Professional"
+                                src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800"
+                                alt="Caring for children"
                             />
                         </div>
                         <div className={styles.stats}>
                             <span className={styles.statsValue}>50+</span>
-                            <span className={styles.statsLabel}>Emergency <br />Cases Daily</span>
+                            <span className={styles.statsLabel}>Daily Patients</span>
                         </div>
                     </div>
                 </div>

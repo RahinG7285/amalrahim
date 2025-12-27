@@ -1,50 +1,36 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8rem;
+    gap: 4rem;
     align-items: center;
 }
 
-.content h1 {
+.content h2 {
     margin-bottom: 2rem;
 }
 
 .content p {
-    margin-bottom: 2.5rem;
-    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
-    line-height: 1.8;
 }
 
 .card {
-    background: var(--bg-surface);
-    padding: 5rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-premium);
-    border: 1px solid var(--border-light);
-    position: relative;
+    background: var(--bg-subtle);
+    padding: 3rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
 }
 
 .card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--brand-primary);
 }
 
-.card h3::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: var(--brand-primary);
-    border-radius: 50%;
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 968px) {
     .grid {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 4rem;
     }
 }
