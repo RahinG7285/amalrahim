@@ -3,32 +3,32 @@ import styles from './Hero.module.css';
 export default function Hero() {
     return (
         <section className={styles.hero}>
-            <div className={`container ${styles.content}`}>
+            <div className={`container`}>
                 <div className={styles.heroMain}>
-                    <div className={`${styles.textContent} reveal`}>
-                        <span className="badge">Professional Care</span>
+                    <div className={styles.textContent}>
+                        <span className="badge">Medical Professional</span>
                         <h1 className={styles.title}>
-                            Compassionate care for your <span>children.</span>
+                            Clinical Excellence in Pediatric Nursing.
                         </h1>
                         <p className={styles.subtitle}>
-                            Experienced Pediatric Nurse at DHQ Hospital Muzaffargarh.
-                            Specializing in expert clinical care with a soft touch for your little ones.
+                            Serving with precision and dedication at DHQ Hospital Muzaffargarh.
+                            Focused on high-impact patient care and medical standards.
                         </p>
                         <div className={styles.buttons}>
-                            <a href="#contact" className="btn-primary">Book Consultation</a>
-                            <a href="#about" className="btn-secondary">Learn More</a>
+                            <a href="#about" className="btn-primary">Professional Profile</a>
+                            <a href="#contact" className="btn-secondary">Contact Office</a>
                         </div>
                     </div>
-                    <div className={`${styles.visualContent} reveal delay-2`}>
+                    <div className={styles.visualContent}>
                         <div className={styles.imageContainer}>
                             <img
-                                src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800"
-                                alt="Caring for children"
+                                src="https://images.unsplash.com/photo-1551076805-e18690437511?auto=format&fit=crop&q=80&w=800"
+                                alt="DHQ Hospital Muzaffargarh Clinical Care"
                             />
                         </div>
                         <div className={styles.stats}>
-                            <span className={styles.statsValue}>50+</span>
-                            <span className={styles.statsLabel}>Daily Patients</span>
+                            <span className={styles.statsLabel}>Annual Patient Volume</span>
+                            <span className={styles.statsValue}>15,000+</span>
                         </div>
                     </div>
                 </div>

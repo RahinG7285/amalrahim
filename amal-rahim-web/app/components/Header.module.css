@@ -1,45 +1,42 @@
 .header {
-    position: fixed;
+    background: white;
+    border-bottom: 4px solid var(--brand-primary);
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    transition: all 0.3s ease;
 }
 
 .container {
-    height: 5.5rem;
+    height: 5rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     font-size: 1.5rem;
-    color: var(--text-primary);
     font-weight: 800;
-    letter-spacing: -0.02em;
+    color: var(--brand-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .nav {
     display: flex;
-    gap: 2.5rem;
-    align-items: center;
+    gap: 3rem;
 }
 
 .nav a {
     text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
 }
 
 .nav a:hover {
-    color: var(--brand-primary);
+    color: var(--brand-secondary);
 }
 
 @media (max-width: 768px) {

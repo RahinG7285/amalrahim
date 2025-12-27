@@ -5,65 +5,36 @@ export default function About() {
         <section id="about" className="section">
             <div className="container">
                 <div className={styles.grid}>
-                    <div className={`${styles.content} reveal`}>
-                        <span className="badge">Professional Background</span>
-                        <h2 className="section-title" style={{ textAlign: 'left', alignItems: 'flex-start' }}>
-                            Clinical Excellence & <br />
-                            Dedicated Pedagogy.
-                        </h2>
+                    <div className={styles.content}>
+                        <h2 className="section-title">Professional Overview</h2>
                         <p>
-                            Serving at <strong>DHQ Hospital Muzaffargarh</strong>, I specialize in the Pediatric Ward,
-                            where I manage critical care and routine procedures for over 50 patients per shift.
+                            I am <strong>Amal Ramin</strong>, a registered healthcare professional currently dedicated to
+                            the Pediatric Ward at <strong>DHQ Hospital Muzaffargarh</strong>.
                         </p>
                         <p>
-                            My approach combines technical precision with deep compassion, ensuring that every child
-                            receives the highest standard of medical attention.
+                            With an extensive background in managing high-volume clinical environments, I specialize in
+                            pediatric medication administration, emergency response, and long-term care management
+                            for 50+ patients per active shift.
+                        </p>
+                        <p>
+                            My professional philosophy centers on medical integrity, patient safety protocols, and
+                            collaborative care models within the Pakistani healthcare landscape.
                         </p>
                     </div>
-                    <div className={`${styles.card} reveal delay-1`}>
-                        <h3>Core Values</h3>
+                    <div className={styles.card}>
+                        <h3>Institutional Duty</h3>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
-                            <li style={{ marginBottom: '2.5rem', display: 'flex', gap: '2rem' }}>
-                                <div style={{
-                                    width: '10px',
-                                    height: '10px',
-                                    background: 'var(--brand-primary)',
-                                    borderRadius: '50%',
-                                    marginTop: '0.6rem',
-                                    flexShrink: 0
-                                }}></div>
-                                <div>
-                                    <strong style={{ display: 'block', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Patient Advocacy</strong>
-                                    <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>Prioritizing child safety and comfort above all.</span>
-                                </div>
+                            <li style={{ marginBottom: '2rem' }}>
+                                <strong style={{ display: 'block', fontSize: '1.1rem', color: 'var(--brand-primary)' }}>Clinical Practice</strong>
+                                <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>DHQ Hospital Muzaffargarh. Serving the Muzaffargarh community through dedicated pediatric care.</span>
                             </li>
-                            <li style={{ marginBottom: '2.5rem', display: 'flex', gap: '2rem' }}>
-                                <div style={{
-                                    width: '10px',
-                                    height: '10px',
-                                    background: 'var(--brand-primary)',
-                                    borderRadius: '50%',
-                                    marginTop: '0.6rem',
-                                    flexShrink: 0
-                                }}></div>
-                                <div>
-                                    <strong style={{ display: 'block', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Medical Standards</strong>
-                                    <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>Adhering to global clinical protocols.</span>
-                                </div>
+                            <li style={{ marginBottom: '2rem' }}>
+                                <strong style={{ display: 'block', fontSize: '1.1rem', color: 'var(--brand-primary)' }}>Shift Management</strong>
+                                <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Efficiently handling 50+ concurrent pediatric cases with high-standard medical protocols.</span>
                             </li>
-                            <li style={{ display: 'flex', gap: '2rem' }}>
-                                <div style={{
-                                    width: '10px',
-                                    height: '10px',
-                                    background: 'var(--brand-primary)',
-                                    borderRadius: '50%',
-                                    marginTop: '0.6rem',
-                                    flexShrink: 0
-                                }}></div>
-                                <div>
-                                    <strong style={{ display: 'block', fontSize: '1.2rem', marginBottom: '0.5rem' }}>Efficient Management</strong>
-                                    <span style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>Optimizing ward operations under pressure.</span>
-                                </div>
+                            <li style={{ marginBottom: '2rem' }}>
+                                <strong style={{ display: 'block', fontSize: '1.1rem', color: 'var(--brand-primary)' }}>Pediatric Specialization</strong>
+                                <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>Specialized in infant care, IV procedures, and intensive patient monitoring.</span>
                             </li>
                         </ul>
                     </div>
